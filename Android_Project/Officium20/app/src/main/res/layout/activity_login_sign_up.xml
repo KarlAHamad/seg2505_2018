@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSignUp"
+    android:background="@color/darkBlue">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="75dp"
+            android:text="Hello!"
+            android:textColor="@color/whitePrimary"
+            android:textSize="30sp"
+            app:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="75dp"
+            android:background="@color/purpleCustom"
+            android:text="Sign Up"
+            android:onClick="OnSetSignUpButton"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/logIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purpleCustom"
+            android:text="Log In"
+            android:onClick="OnSetLogInButton"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
